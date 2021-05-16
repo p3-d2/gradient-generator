@@ -247,10 +247,12 @@ const DOM = () => {
   };
 
   const addPreview = () => {
-    const preview = document.createElement("div");
-    preview.classList.add("preview");
-    document.body.appendChild(preview);
-    generateCode();
+    if (!document.querySelector(".preview")) {
+      const preview = document.createElement("div");
+      preview.classList.add("preview");
+      document.body.appendChild(preview);
+      generateCode();
+    }
   };
 
   return {
