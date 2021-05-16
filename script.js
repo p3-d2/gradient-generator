@@ -346,3 +346,5 @@ window.addEventListener("resize", () => {
     if (!document.querySelector(".preview")) dom.addPreview();
   }
 });
+
+dom.addPreview();
