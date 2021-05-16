@@ -1,0 +1,34 @@
+.toasted {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  background-color: var(--panel);
+  color: var(--switch);
+  border-radius: 4px;
+  padding: 8px 14px;
+
+  overflow-x: hidden;
+  will-change: transform, opacity;
+
+  animation: show 1s forwards, show 1s 4s forwards reverse;
+  z-index: 3;
+}
+
+.toasted .loading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 4px;
+  width: 100%;
+  border-radius: 0 0 4px 4px;
+  background-color: var(--switch);
+  will-change: transform;
+
+  animation: toasted 3s 1s forwards;
+}
+
+.remove {
+  animation: show 1s forwards reverse !important;
+}

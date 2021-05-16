@@ -1,0 +1,31 @@
+.buttons {
+  width: 100%;
+  margin: 30px 0;
+
+  display: grid;
+  grid-template-columns: repeat(8, 35px);
+  grid-column-gap: 1rem;
+}
+
+.buttons button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid var(--gray);
+  color: var(--gray);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button i {
+  pointer-events: none;
+}
+
+.rotate-icon i {
+  transform: rotate(45deg);
+}
+
+.buttons .active {
+  border: none;
+  background-color: var(--blue);
+}

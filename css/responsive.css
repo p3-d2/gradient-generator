@@ -1,0 +1,52 @@
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    place-items: center;
+  }
+
+  .output {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons button {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0.6rem;
+  }
+
+  #copy {
+    left: 78%;
+  }
+
+  .colors {
+    justify-content: center;
+    grid-template-columns: repeat(3, 50px);
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.9rem;
+  }
+
+  .gradient-type {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  #copy {
+    left: 75%;
+  }
+}

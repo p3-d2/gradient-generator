@@ -1,0 +1,25 @@
+.output {
+  background-color: var(--lightGray);
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+#code {
+  width: 100%;
+  resize: none;
+  color: var(--switch);
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+#copy {
+  font-size: 14px;
+  background: var(--blue);
+  color: var(--white);
+  position: relative;
+  left: 85%;
+  bottom: 10px;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
