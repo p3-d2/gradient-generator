@@ -349,4 +349,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-dom.addPreview();
+window.addEventListener("onload", () => {
+  if (window.innerWidth >= 1080) dom.addPreview()
+})
